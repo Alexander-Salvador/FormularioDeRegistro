@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formulario {
+    background-color: beige;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    row-gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.formulario__title {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: system-ui;
+
+}
+
+input {
+    color: rgb(158, 158, 158);
+    display: block;
+    border-radius: 0.4rem;
+    border: transparent;
+    font-size: 0.8rem;
+    width: 16rem;
+    height: 1.8rem;
+    align-content: center;
+    padding-left: 0.3rem;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    color: rgb(158, 158, 158);
+    /* background-color: #cac9c9; */
+}
+
+
+
+button {
+    display: flex;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #cac9c9;
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 1rem;
+    cursor: pointer;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
